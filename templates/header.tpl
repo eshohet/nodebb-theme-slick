@@ -82,6 +82,22 @@
 
 	<main id="panel">
 		<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
+
+			<!-- IF !config.loggedIn -->
+			<div style="
+				position: relative;
+				top: 0;
+				left: 0;
+				min-height: 0;
+				width: 100%;
+				text-align: center;
+				background-color: #010E33;
+				padding: .75em 1em;
+				">
+				<h3 style="color: white;"><a href="/register" style="color: white">Join our shill-free community of crypto & blockchain enthusiasts today.</a></h3>
+			</div>
+			<!-- ENDIF !config.loggedIn -->
+
 			<div class="load-bar">
 				<div class="bar"></div>
 				<div class="bar"></div>
