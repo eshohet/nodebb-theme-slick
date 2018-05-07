@@ -107,5 +107,11 @@
 				<!-- IMPORT partials/menu.tpl -->
 			</div>
 		</nav>
+		<!-- IF !config.loggedIn -->
+		<div class="container" id="content" style="margin-top:75px;">
+		<!-- ELSE -->
 		<div class="container" id="content">
+		<!-- ENDIF !config.loggedIn -->
+
+
 			<!-- IMPORT partials/noscript/warning.tpl -->
