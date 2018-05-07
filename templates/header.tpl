@@ -108,7 +108,7 @@
 			</div>
 		</nav>
 		<!-- IF !config.loggedIn -->
-		<div class="container" id="content" style="margin-top:75px;">
+		<div class="container" id="content2" style="margin-top:75px;">
 		<!-- ELSE -->
 		<div class="container" id="content">
 		<!-- ENDIF !config.loggedIn -->
