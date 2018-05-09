@@ -56,9 +56,17 @@
 			<!-- IMPORT partials/post_bar.tpl -->
 		</div>
 
+
 		<!-- IF config.usePagination -->
 		<!-- IMPORT partials/paginator.tpl -->
 		<!-- ENDIF config.usePagination -->
+
+		<!-- IF !loggedIn -->
+		<div style="text-align: center;">
+			<h4><a href="/register">Enjoyed this post? Consider registering for more interesting content!</a></h4>
+			<br><br><br>
+		</div>
+		<!-- ENDIF !loggedIn -->
 
 		<div class="visible-xs visible-sm pagination-block text-center">
 			<div class="progress-bar"></div>
