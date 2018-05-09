@@ -94,7 +94,7 @@
 				background-color: #010E33;
 				padding: .75em 1em;
 				">
-				<h3 style="color: white;"><a href="/register" style="color: white">Join our shill-free community of crypto & blockchain enthusiasts today.</a></h3>
+				<span class="banner-text"><a href="/register" style="color: white">Join our shill-free community of crypto & blockchain enthusiasts today.</a></span>
 			</div>
 			<!-- ENDIF !config.loggedIn -->
 
