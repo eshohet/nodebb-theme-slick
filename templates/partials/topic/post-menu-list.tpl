@@ -58,6 +58,9 @@
 </li>
 <!-- ENDIF posts.display_ip_ban -->
 <!-- ENDIF posts.ip -->
+
+<!-- IMPORT partials/topic/warn.tpl -->
+
 <li role="presentation" class="divider"></li>
 <!-- ENDIF posts.display_moderator_tools -->
 
