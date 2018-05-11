@@ -138,7 +138,7 @@
 					<li>
 						<a href="{relative_path}/register">
 							<i class="fa fa-pencil visible-xs-inline"></i>
-							<span style="color: red;">[[global:register]]</span>
+							<button class="btn btn-danger" style="color: white; margin-top: -5px;">[[global:register]]</button>
 						</a>
 					</li>
 					<!-- ENDIF allowRegistration -->

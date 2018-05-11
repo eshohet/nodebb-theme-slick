@@ -84,16 +84,7 @@
 		<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
 
 			<!-- IF !config.loggedIn -->
-			<div style="
-				position: relative;
-				top: 0;
-				left: 0;
-				min-height: 0;
-				width: 100%;
-				text-align: center;
-				background-color: #010E33;
-				padding: .75em 1em;
-				">
+			<div onclick="window.location = '/register';" class="banner-holder">
 				<span class="banner-text"><a href="/register" style="color: white">Join our community of crypto & blockchain enthusiasts today.</a></span>
 			</div>
 			<!-- ENDIF !config.loggedIn -->
