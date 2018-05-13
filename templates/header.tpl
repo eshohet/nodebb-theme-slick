@@ -9,6 +9,8 @@
 				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 				})(window,document,'script','dataLayer','GTM-W5T7CQQ');</script>
 
+	<meta property="og:description"
+		  content="A forum for cryptocurrency & blockchain enthusiasts. Join now!" />
 	<!-- BEGIN metaTags -->
 	<!-- IF metaTags.content -->
 	{function.buildMetaTag}
