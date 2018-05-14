@@ -56,8 +56,12 @@
 		<span class="menu-icon"><i class="fa fa-ban"></i></span> [[topic:ban-ip]] {posts.ip}
 	</a>
 </li>
+
+<!-- IMPORT partials/topic/warn.tpl -->
+
 <!-- ENDIF posts.display_ip_ban -->
 <!-- ENDIF posts.ip -->
+
 <li role="presentation" class="divider"></li>
 <!-- ENDIF posts.display_moderator_tools -->
 
