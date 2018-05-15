@@ -29,14 +29,17 @@ a, a:hover, a:visited, a:active, a:focus {
 #content {
 	transition: opacity 150ms linear;
 	margin-bottom: 20px;
-
+	@media (max-width: @screen-md-max) {
+		margin-top: 10px;
+	}
 	&.ajaxifying {
 		opacity: 0;
 	}
 }
 .guest {
+	margin-top: 75px !important;
 	@media (max-width: @screen-sm-max) {
-		//margin-top: 150px !important;
+		margin-top: 55px !important;
 	}
 }
 
@@ -76,4 +79,9 @@ a, a:hover, a:visited, a:active, a:focus {
 
 .bootbox {
 	z-index: 100001;
+}
+
+.logo {
+	width: 220px;
+	margin-top: 0px;
 }
