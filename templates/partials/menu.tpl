@@ -20,12 +20,12 @@
 
 			</div>
 
-			<div id="nav-dropdown" class="hidden-xs">
+			<div id="nav-dropdown" class="hidden-xs hidden-sm">
 				<!-- IF !maintenanceHeader -->
 				<!-- IF config.loggedIn -->
 
 				<ul id="logged-in-menu" class="nav navbar-nav navbar-right">
-					<li class="notifications dropdown text-center hidden-xs" component="notifications">
+					<li class="notifications dropdown text-center hidden-xs hidden-sm" component="notifications">
 						<a href="#" title="[[global:header.notifications]]" class="dropdown-toggle" data-toggle="dropdown" id="notif_dropdown">
 							<i component="notifications/icon" class="fa fa-fw fa-bell-o" data-content="0"></i>
 						</a>
@@ -43,7 +43,7 @@
 					<!-- IF !config.disableChat -->
 					<li class="chats dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#" title="[[global:header.chats]]" id="chat_dropdown" component="chat/dropdown">
-							<i component="chat/icon" class="fa fa-comment-o fa-fw"></i> <span class="visible-xs-inline">[[global:header.chats]]</span>
+							<i component="chat/icon" class="fa fa-comment-o fa-fw"></i> <span class="visible-xs-inline visible-sm-inline">[[global:header.chats]]</span>
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="chat_dropdown">
 							<li>
@@ -63,7 +63,7 @@
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="user_dropdown" title="[[global:header.profile]]">
 							<img component="header/userpicture" class="user-avatar" src="{user.picture}" alt="{user.username}"<!-- IF !user.picture --> style="display: none;"<!-- ENDIF !user.picture --> />
 							<div component="header/usericon" class="user-icon" style="background-color: {user.icon:bgColor};<!-- IF user.picture --> display: none;"<!-- ENDIF user.picture -->">{user.icon:text}</div>
-							<span id="user-header-name" class="visible-xs-inline">{user.username}</span>
+							<span id="user-header-name" class="visible-xs-inline visible-sm-inline">{user.username}</span>
 						</a>
 						<ul id="user-control-list" component="header/usercontrol" class="dropdown-menu" aria-labelledby="user_dropdown">
 							<li>
@@ -137,14 +137,14 @@
 					<!-- IF allowRegistration -->
 					<li>
 						<a href="{relative_path}/register">
-							<i class="fa fa-pencil visible-xs-inline"></i>
+							<i class="fa fa-pencil visible-xs-inline visible-sm-inline"></i>
 							<button class="btn btn-danger" style="color: white; margin-top: -5px;">[[global:register]]</button>
 						</a>
 					</li>
 					<!-- ENDIF allowRegistration -->
 					<li>
 						<a href="{relative_path}/login">
-							<i class="fa fa-sign-in visible-xs-inline"></i>
+							<i class="fa fa-sign-in visible-xs-inline visible-sm-inline"></i>
 							<span>[[global:login]]</span>
 						</a>
 					</li>
@@ -153,7 +153,7 @@
 				<!-- IF config.searchEnabled -->
 				<ul class="nav navbar-nav navbar-right search-menu">
 					<li>
-						<form id="search-form" class="navbar-form navbar-right hidden-xs" role="search" method="GET">
+						<form id="search-form" class="navbar-form navbar-right hidden-xs hidden-sm" role="search" method="GET">
 							<button id="search-button" type="button" class="btn btn-link"><i class="fa fa-search fa-fw" title="[[global:header.search]]"></i></button>
 							<div class="hidden" id="search-fields">
 								<div class="form-group">
@@ -164,7 +164,7 @@
 							</div>
 						</form>
 					</li>
-					<li class="visible-xs" id="search-menu">
+					<li class="visible-xs visible-sm" id="search-menu">
 						<a href="{relative_path}/search">
 							<i class="fa fa-search fa-fw"></i> [[global:search]]
 						</a>
@@ -172,7 +172,7 @@
 				</ul>
 				<!-- ENDIF config.searchEnabled -->
 
-				<ul class="nav navbar-nav navbar-right hidden-xs">
+				<ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
 					<li>
 						<a href="#" id="reconnect" class="hide" title="Connection to {title} has been lost, attempting to reconnect...">
 							<i class="fa fa-check"></i>
@@ -226,7 +226,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li>
 						<a href="{relative_path}/login">
-							<i class="fa fa-sign-in visible-xs-inline"></i>
+							<i class="fa fa-sign-in visible-xs-inline visible-sm-inline"></i>
 							<span>[[global:login]]</span>
 						</a>
 					</li>
