@@ -28,7 +28,11 @@
                         <!-- IF categories.children.link -->
                         <a class="subcategory-title" href="{categories.children.link}" title="{categories.children.name}">{categories.children.name}</a>
                         <!-- ELSE -->
+                        <!-- IF loggedIn -->
+                        <a class="subcategory-title {categories.children.unread-class}" href="{config.relative_path}/category/{categories.children.slug}" title="{categories.children.name}">{categories.children.name}</a>
+                        <!-- ELSE -->
                         <a class="subcategory-title" href="{config.relative_path}/category/{categories.children.slug}" title="{categories.children.name}">{categories.children.name}</a>
+                        <!-- ENDIF loggedIn -->
                         <!-- ENDIF categories.children.link -->
                     </div>
                     <!-- END categories.children -->
