@@ -43,11 +43,22 @@
 			<a href="{config.relative_path}/groups/{posts.user.selectedGroups.slug}"><small class="label group-label inline-block" style="padding: 4px; background-color: {posts.user.selectedGroups.labelColor};"><!-- IF posts.user.selectedGroups.icon --><i class="fa {posts.user.selectedGroups.icon}"></i> <!-- ENDIF posts.user.selectedGroups.icon -->{posts.user.selectedGroups.userTitle}</small></a>
 			<!-- ENDIF posts.user.selectedGroups.slug -->
 			<!-- END posts.user.selectedGroups -->
-			<br>
-			<i class="fa fa-star"></i>
-			<span class="formatted-number">{posts.user.reputation}</span>
-			<i class="fa fa-pencil"></i>
-			<span class="formatted-number">{posts.user.postcount}</span>
+			<br><br>
+			<table class="table">
+				<tbody>
+				<tr>
+					<td>Posts: </td>
+					<td><span class="formatted-number">{posts.user.postcount}</span></td>
+				</tr>
+				<tr>
+					<td>Reputation: </td>
+					<td><span class="formatted-number">{posts.user.reputation}</span></td>
+				</tr>
+				</tbody>
+			</table>
+            <!-- IF posts.lvl -->
+                <!-- IMPORT partials/topic/level.tpl -->
+            <!-- ENDIF posts.lvl -->
 		</div>
 	</div>
 	<div class="col-sm-10 col-md-10 col-lg-10 post-content" component="post/content">

@@ -77,6 +77,13 @@
 					<div class="human-readable-number" title="{followingCount}">{followingCount}</div>
 					<span class="stat-label">[[user:following]]</span>
 				</div>
+
+				<!-- IF lvl -->
+				<div class="stat">
+					<div class="human-readable-number" title="{lvl}">{lvl}</div>
+					<span class="stat-label">Level</span>
+				</div>
+				<!-- ENDIF lvl -->
 			</div>
 
 			<div class="text-center profile-meta">
