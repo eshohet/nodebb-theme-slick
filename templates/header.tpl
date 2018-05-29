@@ -9,6 +9,16 @@
 				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 				})(window,document,'script','dataLayer','GTM-W5T7CQQ');</script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118274700-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-118274700-1');
+    </script>
+
 	<meta property="og:description"
 		  content="A forum for cryptocurrency & blockchain enthusiasts. Join now!" />
 	<!-- BEGIN metaTags -->
