@@ -1,0 +1,473 @@
+#register {
+  background: #009fea;
+  font-family: sans-serif;
+}
+
+#register fieldset {
+  box-shadow: 0 8px 10px #238bea;
+}
+
+#register.error {
+  background: #f04000;
+}
+
+#register.error fieldset {
+  box-shadow: 0 8px 10px #bd3200;
+}
+
+#register {
+
+  h1, h2 {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  h1 {
+    top: 24px;
+    color: white;
+    font-size: 12px;
+  }
+
+  h2 {
+    top: 44px;
+    color: white;
+    font-size: 10px;
+    opacity: 0.7;
+  }
+
+  ul.items {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    top: 50%;
+    left: -60px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  ul.items li {
+    width: 8px;
+    height: 8px;
+    margin: 10px 0;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.4;
+    cursor: pointer;
+  }
+
+  ul.items li.active {
+    opacity: 1;
+  }
+
+  form {
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  form fieldset {
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    background: white;
+    border-radius: 3px;
+    opacity: 0;
+    -webkit-transform: scale(0.2);
+    -moz-transform: scale(0.2);
+    -o-transform: scale(0.2);
+    transform: scale(0.2);
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+
+  form fieldset input, form fieldset p {
+    display: inline-block;
+    width: 200px;
+    margin-left: 50px;
+    color: #333333;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  form fieldset p {
+    margin-top: 22px;
+    text-align: center;
+  }
+
+  form fieldset input {
+    height: 40px;
+    margin-top: 8px;
+    border: none;
+    outline: none;
+  }
+
+  form fieldset .icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+
+  form fieldset .icon i {
+    position: absolute;
+    display: block;
+  }
+
+  form fieldset .icon i::before, form fieldset .icon i::after {
+    position: absolute;
+    content: '';
+  }
+
+  form fieldset .icon.left {
+    left: 10px;
+  }
+
+  form fieldset .icon.right {
+    right: 10px;
+    cursor: pointer;
+  }
+
+  form fieldset .icon.button:hover {
+    background: #f2f2f2;
+    border-radius: 3px;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+
+  form fieldset.enable {
+    z-index: 1;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-out 0.2s;
+    -o-transition: all 0.5s ease-out 0.2s;
+    -moz-transition: all 0.5s ease-out 0.2s;
+    transition: all 0.5s ease-out 0.2s;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation: enable 0.5s ease-out 0.2s;
+    -moz-animation: enable 0.5s ease-out 0.2s;
+    -o-animation: enable 0.5s ease-out 0.2s;
+    animation: enable 0.5s ease-out 0.2s;
+  }
+
+  form fieldset.disable {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    -webkit-transform: translateY(120px) scale(0.9);
+    -moz-transform: translateY(120px) scale(0.9);
+    -o-transform: translateY(120px) scale(0.9);
+    transform: translateY(120px) scale(0.9);
+  }
+
+  #register.error fieldset {
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-animation: error 0.3s ease-out;
+    -moz-animation: error 0.3s ease-out;
+    -o-animation: error 0.3s ease-out;
+    animation: error 0.3s ease-out;
+  }
+
+  @-webkit-keyframes enable {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0.2);
+      transform: scale(0.2);
+    }
+    60% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+
+  @-moz-keyframes enable {
+    0% {
+      opacity: 0;
+      -moz-transform: scale(0.2);
+      transform: scale(0.2);
+    }
+    60% {
+      -moz-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      -moz-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+
+  @-o-keyframes enable {
+    0% {
+      opacity: 0;
+      -o-transform: scale(0.2);
+      transform: scale(0.2);
+    }
+    60% {
+      -o-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      -o-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+
+  @keyframes enable {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0.2);
+      -moz-transform: scale(0.2);
+      -o-transform: scale(0.2);
+      transform: scale(0.2);
+    }
+    60% {
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+
+  @-webkit-keyframes error {
+    0%, 50%, 100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    25% {
+      -webkit-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+    }
+    75% {
+      -webkit-transform: rotate(3deg);
+      transform: rotate(3deg);
+    }
+  }
+
+  @-moz-keyframes error {
+    0%, 50%, 100% {
+      -moz-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    25% {
+      -moz-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+    }
+    75% {
+      -moz-transform: rotate(3deg);
+      transform: rotate(3deg);
+    }
+  }
+
+  @-o-keyframes error {
+    0%, 50%, 100% {
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    25% {
+      -o-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+    }
+    75% {
+      -o-transform: rotate(3deg);
+      transform: rotate(3deg);
+    }
+  }
+
+  @keyframes error {
+    0%, 50%, 100% {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    25% {
+      -webkit-transform: rotate(-3deg);
+      -moz-transform: rotate(-3deg);
+      -o-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+    }
+    75% {
+      -webkit-transform: rotate(3deg);
+      -moz-transform: rotate(3deg);
+      -o-transform: rotate(3deg);
+      transform: rotate(3deg);
+    }
+  }
+
+  /**
+   * Icons in CSS, long as f****
+   */
+  .icon .arrow {
+    width: 2px;
+    height: 17px;
+    top: 5px;
+    left: 14px;
+    background: #333333;
+  }
+
+  .icon .arrow::before {
+    width: 6px;
+    height: 6px;
+    bottom: -1px;
+    left: -3px;
+    border-color: #333333;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .icon .user {
+    width: 20px;
+    height: 10px;
+    bottom: 5px;
+    left: 5px;
+    box-shadow: 0 0 0 2px #333333 inset;
+    border-radius: 6px 6px 3px 3px;
+  }
+
+  .icon .user::before {
+    width: 10px;
+    height: 10px;
+    top: -9px;
+    left: 5px;
+    box-shadow: 0 0 0 2px #333333 inset;
+    border-radius: 50%;
+  }
+
+  .icon .letter {
+    width: 20px;
+    height: 12px;
+    top: 9px;
+    left: 5px;
+    box-shadow: 0 0 0 2px #333333 inset;
+    border-radius: 3px;
+  }
+
+  .icon .letter::before, .icon .letter::after {
+    width: 11px;
+    height: 2px;
+    top: 4px;
+    background: #333333;
+  }
+
+  .icon .letter::before {
+    left: 0;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+
+  .icon .letter::after {
+    right: 0;
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+  }
+
+  .icon .lock {
+    width: 20px;
+    height: 16px;
+    top: 9px;
+    left: 5px;
+    box-shadow: 0 0 0 2px #333333 inset;
+    border-radius: 3px;
+  }
+
+  .icon .lock::before {
+    width: 8px;
+    height: 8px;
+    top: -4px;
+    left: 4px;
+    border: 2px solid transparent;
+    border-top: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-radius: 50%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .icon .lock::after {
+    width: 6px;
+    height: 7px;
+    top: 4px;
+    left: 7px;
+    box-shadow: 0 0 0 2px #333333 inset;
+  }
+
+  .icon .heart {
+    width: 10px;
+    height: 10px;
+    top: 11px;
+    left: 7px;
+    background: #ff5233;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .icon .heart::before, .icon .heart::after {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ff5233;
+  }
+
+  .icon .heart::before {
+    left: -6px;
+  }
+
+  .icon .heart::after {
+    top: -6px;
+  }
+}

@@ -136,7 +136,7 @@
 				<ul id="logged-out-menu" class="nav navbar-nav navbar-right">
 					<!-- IF allowRegistration -->
 					<li>
-						<a href="{relative_path}/register">
+						<a id="register-link" href="#">
 							<i class="fa fa-pencil visible-xs-inline visible-sm-inline"></i>
 							<button class="btn btn-danger" style="color: white; margin-top: -5px;">[[global:register]]</button>
 						</a>

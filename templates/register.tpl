@@ -13,7 +13,7 @@
             </div>
         </div>
         <!-- ENDIF alternate_logins -->
-        
+
 		<div class="col-lg-12">
 			<div class="register-block">
 				<div class="alert alert-danger<!-- IF !error --> hidden<!-- ENDIF !error -->" id="register-error-notify" >

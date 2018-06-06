@@ -115,8 +115,8 @@
 		<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
 
 			<!-- IF !config.loggedIn -->
-			<div onclick="window.location = '/register';" class="banner-holder">
-				<span class="banner-text"><a href="/register" style="color: white">Join our community of crypto & blockchain enthusiasts today.</a></span>
+			<div id="register-banner" class="banner-holder">
+				<span class="banner-text"><a href="#" style="color: white">Join our community of crypto & blockchain enthusiasts today.</a></span>
 			</div>
 			<!-- ENDIF !config.loggedIn -->
 
