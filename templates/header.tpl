@@ -19,6 +19,8 @@
       gtag('config', 'UA-118274700-1');
     </script>
 
+	<script src="https://cdn.rawgit.com/dropbox/zxcvbn/master/dist/zxcvbn.js"></script>
+
 	<meta property="og:description"
 		  content="A forum for cryptocurrency & blockchain enthusiasts. Join now!" />
 	<!-- BEGIN metaTags -->
