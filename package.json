@@ -1,6 +1,6 @@
 {
-  "name": "nodebb-theme-slick",
-  "version": "1.2.2",
+  "name": "nodebb-theme-slick-bcf",
+  "version": "2.0.0",
   "nbbpm": {
     "compatibility": "^1.8.0"
   },
@@ -8,7 +8,7 @@
   "main": "theme.less",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pichalite/nodebb-theme-slick.git"
+    "url": "git+https://github.com/eshohet/nodebb-theme-slick.git"
   },
   "keywords": [
     "nodebb",
@@ -17,16 +17,16 @@
     "themes"
   ],
   "author": {
-    "name": "pichalite",
-    "email": "pichalite.com@gmail.com"
+    "name": "elliot shohet",
+    "email": "elliot.shohet@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/pichalite/nodebb-theme-slick/issues"
+    "url": "https://github.com/eshohet/nodebb-theme-slick/issues"
   },
   "maintainers": [
     {
-      "name": "pichalite",
-      "email": "pichalite.com@gmail.com"
+      "name": "elliot shohet",
+      "email": "elliot.shohet@gmail.com"
     }
   ]
 }
