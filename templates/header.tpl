@@ -19,6 +19,8 @@
       gtag('config', 'UA-118274700-1');
     </script>
 
+	<script src="https://cdn.rawgit.com/dropbox/zxcvbn/master/dist/zxcvbn.js"></script>
+
 	<meta property="og:description"
 		  content="A forum for cryptocurrency & blockchain enthusiasts. Join now!" />
 	<!-- BEGIN metaTags -->
@@ -115,8 +117,8 @@
 		<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
 
 			<!-- IF !config.loggedIn -->
-			<div onclick="window.location = '/register';" class="banner-holder">
-				<span class="banner-text"><a href="/register" style="color: white">Join our community of crypto & blockchain enthusiasts today.</a></span>
+			<div id="register-banner" class="banner-holder">
+				<span class="banner-text"><a href="#" style="color: white">Join our community of crypto & blockchain enthusiasts today.</a></span>
 			</div>
 			<!-- ENDIF !config.loggedIn -->
 
