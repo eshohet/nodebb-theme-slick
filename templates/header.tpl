@@ -29,6 +29,7 @@
 	<!-- ENDIF metaTags.content -->
 	<!-- END metaTags -->
 	<link rel="stylesheet" type="text/css" href="{relative_path}/assets/stylesheet.css?{config.cache-buster}" />
+	<link rel="stylesheet" type="text/css" href="https://s3-us-west-1.amazonaws.com/blockchainforums/register.css" />
 	<!-- BEGIN linkTags -->{function.buildLinkTag}
 	<!-- END linkTags -->
 
