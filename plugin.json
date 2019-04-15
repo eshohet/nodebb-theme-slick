@@ -35,9 +35,6 @@
       "method": "getLinkTags"
     }
   ],
-  "less": [
-    "theme.less"
-  ],
   "scripts": [
     "lib/slick.js",
     "lib/modules/slideout.min.js",
